@@ -15,32 +15,21 @@ public class P0001_Multiples_of_3_and_5{
 		/*
 		 * method 1: check every number below the upper bound
 		 */
-		long startTime_1=System.nanoTime();
-		
 		int sum=0;
 		for(int num=0; num<bound; num++){
 			if(num%3==0 || num%5==0) sum += num;
 		}
 		
-		long elapsedTime_1=System.nanoTime() - startTime_1;
-		double timeTook_1=elapsedTime_1 * (1.0e-9);
 		
-		System.out.println("Sum = " + sum);
-		System.out.println("Method 1 takes " + timeTook_1 + " seconds.");
+		System.out.println("(method 1) Sum = " + sum);
 		
 		
 		/*
 		 * method 2: mathematical approach
 		 */
-		long startTime_2=System.nanoTime();
-		
 		int sum2=sum_multiples(3,bound) + sum_multiples(5,bound) - sum_multiples(15, bound);
 		
-		long elapsedTime_2=System.nanoTime() - startTime_2;
-		double timeTook_2=elapsedTime_2 * (1.0e-9);
-		
-		//System.out.println("Sum = " + sum2);
-		System.out.println("Method 2 takes " + timeTook_2 + " seconds.");
+		System.out.println("(method 2) Sum = " + sum2);
 
 	}
 	
