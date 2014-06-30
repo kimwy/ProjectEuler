@@ -18,7 +18,6 @@ public class P0001_Multiples_of_3_and_5{
 			if(num%3==0 || num%5==0) sum += num;
 		}
 		
-		
 		System.out.println("(method 1) Sum = " + sum);
 		
 		
