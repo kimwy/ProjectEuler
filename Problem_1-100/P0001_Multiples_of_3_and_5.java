@@ -10,8 +10,6 @@ public class P0001_Multiples_of_3_and_5{
 		
 		int bound=1000;
 		
-		System.out.println("Bound = "+bound);
-		
 		/*
 		 * method 1: check every number below the upper bound
 		 */
